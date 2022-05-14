@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMIL PHOTOGRAPHY</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="logo">TAMIL<b> PHOTOGRAPHY</b></a>
+        <div class="toggle" onclick="navToggle();"></div>
+        <ol>
+            <li><a href="#home" onclick="navToggle();">home</a></li>
+            <li><a href="#about" onclick="navToggle();">about</a></li>
+            <li><a href="#gallery" onclick="navToggle();">gallery</a></li>
+            <li><a href="#contact" onclick="navToggle();">contact</a></li>
+        </ol>
+    </div>
+
+    <section id="home" class="home view">
+        <div class="highlight">
+            <h3>explore life with</h3>
+            <h1><b>TAMIL</b> PHOTOGRAPHY</h1><br>
+            <p class="tagline">
+                A catchy photography is a perfect way to get your brand stick in your target audience’s mind. Adding a little bit of creativity and humor to your photography will also help them stand out from the crowd.
+            </p>
+            <button class="join">join now</button>
+        </div>
+        <div class="banner"></div>
+    </section>
+
+    <section id="about" class="about view">
+        <div class="main">
+            <h2><span>A</span>bout Us</h2>
+            <h6>Memories you create,Freezing moments for you 
+                and we capture
+            </h6>
+        </div>
+        <div class="content">
+            <div class="cols">
+                <p><b>E</b>ssentially, the purpose of photography is to communicate and document moments in time. When you take a photograph and share it with others, you're showing a moment that was frozen through a picture. This moment can tell someone many things, from the environment to what people are doing.</p>
+                <a href="#">more</a>
+            </div>
+            <div class="cols">
+                <div class="box">
+                    <img src="./image/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery" class="gallery view">
+        <div class="main">
+            <h2><span>G</span>allery</h2>
+            <h6>Photographers often have to think of creative ways to market their work and explain what they do. One of the best ways to do this is to use an attractive photography.</h6>
+        </div>
+        <div class="content">
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/ga1.jpg" alt="">
+                </div>
+                <div class="title">portrait photography</div>
+                <p>It’s always a good time for great portraits
+                </p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/art.jpg" alt="">
+                </div>
+                <div class="title">art photography</div>
+                <p>Photography is the art of catching memories</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/fash.jpg" alt="">
+                </div>
+                <div class="title">fashion photography</div>
+                <p>Passionate about photography</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/na.jpg" alt="">
+                </div>
+                <div class="title">nature photography</div>
+                <p>Go behind the scene to capture the best shots</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/str.jpg" alt="">
+                </div>
+                <div class="title">street photography</div>
+                <p>The power to capture the world in a single image</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/cr.jpg" alt="">
+                </div>
+                <div class="title">creative photography</div>
+                <p>Invent your own style</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/wed.jpeg" alt="">
+                </div>
+                <div class="title">wedding photography</div>
+                <p>Capture every special moment perfectly!</p>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <img src="./image/wp.jpg" alt="">
+                </div>
+                <div class="title">wildlife photography</div>
+                <p>The best photos aren’t planned</p>
+            </div>
+
+        </div>
+
+
+    <section id="contact" class="contact view">
+        <div class="main">
+            <h2><span>C</span>ontact</h2>
+            <h6>Keeping You Always Connected</h6>
+        </div>
+
+        <div class="content">
+            <form>
+                <input type="text" placeholder="User">
+                <input type="email" placeholder="Email">
+                <textarea rows="s" placeholder="what's your mind "></textarea>
+                <br>
+                <input type="submit" value="send" class="btn">
+            </form>
+            <div class="bgimg"></div>
+        </div>
+
+    </section>
+
+
+    <section class="copyright">
+        copyright &copy;<a href="#"> Tamil Photography</a> 2022 | TN photographer
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle("sticky", window.scrollY > 50);
+        });
+
+        const togglebar = document.querySelector('.toggle');
+        const menu = document.querySelector('ol');
+
+        function navToggle(){
+            togglebar.classList.toggle("active");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    
+</body>
+</html>
